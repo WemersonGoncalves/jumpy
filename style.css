@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+
+:root{
+    --bodyBackgoundColor: #1E1E1E;
+    --fontFieldColor: #616161;
+    --bottonColor: #0C70F2;
+    --fontTitleColor: #FFFFFF;
+    --fieldBackgroundColor: #FFFFFF;
+    --fontButtonColor: #FFFFFF;
+    --textAlertColor:#E73550;
+    --fontSubTitle: 'Helvetica';
+    --fontText: 'Raleway';
+    }
+body{
+    display: flex;
+    /* display: grid;
+    grid-auto-flow: column;*/
+    background-color: var(--bodyBackgoundColor);
+    }
+header{
+    width: 100px;
+    }
+header img{
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 164px;
+    height: 81.85px;
+    }
+.formForRegister{
+    margin-top: 80px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.formForRegister img {
+    width: 311px;
+    height: 74px;
+    left: 598px;
+    top: 103px;
+    }
+.formForRegister h2{
+    font-family: var(--fontSubTitle);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+
+    color: var(--fontTitleColor);
+    }
+.formInputs{
+    width: 200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*list-style: none;*/
+    }
+.formInputs label{
+    font-family: var(--fontText);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: var(--fontTitleColor)
+    }
+.formInputs input{
+    align-items: center;
+    padding: 11px 13px;
+    gap: 8px;
+
+    width: 524px;
+    height: 30px;
+    left: 509px;
+    top: 312px;
+
+    font-family: var(--fontText);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: var(--fontFieldColor);
+    background-color: var(--fieldBackgroundColor);
+    border-radius: 10px;
+    }
+.formInputs #textAlertName,
+#textAlertMail, #textAlertPhone,
+#textAlertCpf, #textAlertPass{
+    font-family: var(--fontText);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    text-align: end;
+    color: var(--textAlertColor);
+    }
+.formInputs #subBtnAlert{
+        font-family: var(--fontText);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: start;
+        }
+.formInputs #submitButton{
+    width: 560px;
+    height: 48px;
+    left: 509px;
+    top: 804px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    font-family: var(--fontText);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: var(--fontButtonColor);
+
+    background: var(--bottonColor);
+    border-radius: 6px;
+    }

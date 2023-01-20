@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jumpy</title>
+</head>
+<body>
+<header>
+    <img src="./assets/dncLogo.png" alt="dnc logo">
+</header>
+<section class="formForRegister">
+    <div class="formLogo">
+        <img src="./assets/jumpyLogo.png" alt="Jumpy logo">
+        <h2>Bem vindo ao Jumpy!</h2>
+    </div>
+<form action="https://formspree.io/f/xdojyrkr" method="post" onsubmit="return checkInfoSubmit()" class="formInputs" name="formRegister">
+    <div class="nameField">
+        <label>Nome Completo:</label>
+        <input type="text" id="nameReg" name="nameField" placeholder="Nome completo" required></input>
+        <p id="textAlertName"></p>
+    </div><div class="mailField">    
+        <label>Email:</label>
+        <input type="email" name="mailField" id="mailReg" placeholder="Digite seu email" required></input>
+        <p id="textAlertMail"></p>
+    </div><div class="phoneField">
+        <label>Telefone:</label>
+        <input type="number" name="phoneField" id="phoneNumber" placeholder="(00) 00000-0000" required></input>
+        <p id="textAlertPhone"></p>
+    </div><div class="cpfField"> 
+        <label>CPF:</label>
+        <input type="number"  id="cpfNumber" name="cpfField" placeholder="000.000.000-00" required></input>
+        <p id="textAlertCpf"></p>
+    </div><div class="passField">
+        <label>Senha:</label>
+        <input type="password" id="passReg" name="passField" placeholder="*************" required></input>
+        <p id="textAlertPass"></p>
+    </div><div>
+        <input id="submitButton" type="button" value="Cadastrar" onclick="checkInfoSubmit()">
+        <p id="subBtnAlert"></p>
+    </div>
+</form>   
+</section>
+<script src="./script.js"></script>
+</body>
+</html>
